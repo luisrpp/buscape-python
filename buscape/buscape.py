@@ -139,6 +139,12 @@ class Buscape():
             parameter = "categoryId=%s" %categoryID    
 
         parameter = parameter + "&format=%s" %(format)
+        
+        if results:
+            parameter = parameter + "&results=%s" %(results)
+
+        if page:
+            parameter = parameter + "&page=%s" %(page)
 
         if lomadee:
             method = "findProductList/lomadee"
